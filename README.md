@@ -1,1 +1,1 @@
-# web_simple_plan
+# simple-plan

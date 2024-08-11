@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #777;
+    align-items: center;
+    height: 56px;
+    column-gap: 26px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    /* background-color: aquamarine; */
+    padding: 12px 18px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+/* scroll */
+.scroll-container {
+    background-color: #F5F5F5;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.scroll-container img {
+    padding: 10px;
+}
+
+.main-container {
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 12px;
+}
+
+.text-section {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.text-section h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.text-section p {
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.img-section {
+    display: flex;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+
+.img-section img {
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+/* Personil */
+.header {
+    /* background-color: aqua; */
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.header p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.personil-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    place-items: center;
+}
+
+.personil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    background-color: var(--dark-100);
+    border-radius: 7px;
+    padding: 20px 40px;
+    width: 350px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.personil-image img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.personil-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.personil-title {
+    font-size: 32px;
+}
+
+.personil-desc {
+    font-size: 14px;
+}
+
+/* Album */
+.header-album {
+    /* background-color: aqua; */
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.header-album h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.album-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    place-items: center;
+    /* background-color: aquamarine; */
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    background-color: var(--dark-100);
+    border-radius: 7px;
+    padding: 20px 40px;
+    width: 350px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.album-image img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.album-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.album-title {
+    font-size: 32px;
+}
+
+.judul {
+    list-style-position: inside;
+}
+
+.album-desc {
+    font-size: 14px;
+}
+
+ul {
+
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* kontak  */
+.kontak-section {
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    /* background-color: aquamarine; */
+
+
+}
+
+.kontak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kontak h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.kontak p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.pesan {
+    width: 500px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--dark-100);
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5)
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.send {
+    color: white;
+    background-color:black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
